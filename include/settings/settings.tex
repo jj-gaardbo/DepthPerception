@@ -15,19 +15,19 @@
 \usepackage{amssymb}								% Mathematical symbols (American mathematical society)
 \usepackage{graphicx}								% Figures
 \usepackage{subfig}									% Enables subfigures
-\numberwithin{equation}{chapter}					% Numbering order for equations
-\numberwithin{figure}{chapter}						% Numbering order for figures
-\numberwithin{table}{chapter}						% Numbering order for tables
+%\numberwithin{equation}{chapter}					% Numbering order for equations
+%\numberwithin{figure}{chapter}						% Numbering order for figures
+%\numberwithin{table}{chapter}						% Numbering order for tables
 \usepackage{listings}								% Enables source code listings
 \usepackage{chemfig}								% Chemical structures
 \usepackage[top=3cm, bottom=3cm,
-			inner=3cm, outer=3cm]{geometry}			% Page margin lengths			
+inner=3cm, outer=3cm]{geometry}			% Page margin lengths			
 \usepackage{eso-pic}								% Create cover page background
 \newcommand{\backgroundpic}[3]{
 	\put(#1,#2){
-	\parbox[b][\paperheight]{\paperwidth}{
-	\centering
-	\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{#3}}}}
+		\parbox[b][\paperheight]{\paperwidth}{
+			\centering
+			\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{#3}}}}
 \usepackage{float} 									% Enables object position enforcement using [H]
 \usepackage{parskip}								% Enables vertical spaces correctly 
 \usepackage{minted}
@@ -47,12 +47,12 @@
 %			justification=justified,
 %			singlelinecheck=false]{caption} 		
 
-		  	
+
 % Activate clickable links in table of contents  	
 \usepackage{hyperref}								
 \hypersetup{colorlinks, citecolor=black,
-   		 	filecolor=black, linkcolor=black,
-    		urlcolor=black}
+	filecolor=black, linkcolor=black,
+	urlcolor=black}
 
 
 % Define the number of section levels to be included in the t.o.c. and numbered	(3 is default)	
@@ -63,8 +63,8 @@
 % Chapter title settings
 \usepackage{titlesec}		
 \titleformat{\chapter}[display]
-  {\Huge\bfseries\filcenter}
-  {{\fontsize{35pt}{1em}\vspace{-4.2ex}\selectfont \textnormal{\thechapter}}}{1ex}{}[]
+{\Huge\bfseries\filcenter}
+{{\fontsize{35pt}{1em}\vspace{-4.2ex}\selectfont \textnormal{\thechapter}}}{1ex}{}[]
 
 
 % Header and footer settings (Select TWOSIDE or ONESIDE layout below)
@@ -77,9 +77,9 @@
 
 
 \fancyhf{}
-\fancyhead[L]{Daniel Kartin}
-\fancyhead[C]{MED3\\AAU CPH}
-\fancyhead[R]{ Human sensen and perception}
+\fancyhead[L]{Jens Jákup Egholm Gaardbo}
+\fancyhead[C]{HSP - MED3\\AAU CPH}
+\fancyhead[R]{20163891}
 \fancyfoot[C]{\thepage}
 
 \usepackage[final]{pdfpages}
@@ -100,9 +100,9 @@
 \useunder{\uline}{\ul}{}
 
 
-\usepackage{apacite}
+\usepackage[natbibapa]{apacite}
 
-\usepackage[square,numbers,sort&compress]{natbib}
+%\usepackage[square,numbers,sort&compress]{natbib}
 \bibliographystyle{apacite}
 
 \usepackage{tocbibind}
