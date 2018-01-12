@@ -1,6 +1,0 @@
-\select@language {english}
-\contentsline {section}{Contents}{i}{figure.caption.1}
-\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
-\contentsline {section}{\numberline {2}Analysis}{1}{section.2}
-\contentsline {section}{References}{1}{section.2}
-\contentsline {section}{Appendices}{1}{section*.2}
