@@ -1,5 +1,5 @@
 \section{Theory}
-This section explores some of the depth cues that we use to perceive depth. Furthermore, it explores how \textit{stereopsis} and \textit{binocular disparity} is used to construct stereograms.
+This section explores the depth cues that we use to perceive depth. Furthermore, it explores how \textit{stereopsis} and \textit{binocular disparity} is used to construct stereograms.
 
 \subsection{Oculomotor depth cues}
 When trying to focus on objects in close range (< 2m) our eye muscles and lenses react by either convergence or accommodation. \textit{Convergence} means that our eyes turn inward and the lenses take on a rounder shape, when for example trying to focus on objects right in front of the nose. The opposite happens in \textit{accomodation}, which means that the eyes turn more away from each other until they are almost parallel and the lenses will flatten out again. We sense these muscular reactions which enable us to determine depth based on them. However, when objects are further away (> 2m) the reaction becomes so small that we will most likely not notice them\citep[p.~196]{sensationPerception}.
@@ -12,35 +12,55 @@ When objects partially hide (or occlude) other objects, and the partially hidden
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{figure/Analysis/partialOcclusion.png}
+	\includegraphics[width=0.75\linewidth]{figure/Analysis/partialOcclusion.png}
 	\caption{Partial occlusion (or Interposition) is a monocular cue that identifies objects which overlap others as closer to the viewer.}
 	\label{fig:partialOcclusion}
 \end{figure}
 
 \subsubsection{Relative height}\label{sec:relativeHeight}
-In \autoref{fig:relativeHeight} three round objects can be seen. Although the three objects seem to be the exact same size on the image, the position of the objects in the image indicate where they are in 3D space. The object positioned higher up is closest to the horizon in the image and will appear to be further away. In this case the object must also be larger than the object positioned lower in the image. This is called \textit{relative height}. The opposite would be true for object hanging from the ceiling\citep[p.~198]{sensationPerception}.
+In \autoref{fig:relativeHeight} three round objects can be seen. Although the visual information that we get from the objects seems to be the same as they are all the same size on the image, the position of the objects indicate where they are in 3D space. The object positioned higher is closest to the horizon and will appear to be further away. In this case the object must also be larger than the object positioned lower in the image. This is called \textit{relative height}. The opposite would be true for object hanging from the ceiling\citep[p.~198]{sensationPerception}.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{figure/Analysis/relativeHeight.png}
+	\includegraphics[width=0.75\linewidth]{figure/Analysis/relativeHeight.png}
 	\caption{The position of an object with respect to the horizon in this figure indicate the spatial position of the object.}
 	\label{fig:relativeHeight}
+\end{figure}
+
+\subsubsection{Familiar size}
+Based on familiarity of objects we are able to determine an objects location in space. \autoref{fig:familiarSize} illustrates how our previous knowledge, that a basketball is larger than a tennisball, is useful in this regard.
+\citep[p.~200]{sensationPerception}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\linewidth]{figure/Analysis/familiarSize.png}
+	\caption{This model demonstrates how we, based on size familiarity, also are able to locate objects in space.}
+	\label{fig:familiarSize}
 \end{figure}
 
 \subsubsection{Relative size}
 Assuming that the two objects seen in \autoref{fig:relativeSize} are equal in their physical size, we are able to place the objects in space, based on how large they appear to be in the image. The larger the object appears, the closer it is\citep[p.~200]{sensationPerception}.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{figure/Analysis/relativeSize.png}
+	\includegraphics[width=0.75\linewidth]{figure/Analysis/relativeSize.png}
 	\caption{Illustration of relative size. The assumption is that both objects are equal in size, but the closer an object is to the viewer, the larger it appears in the image.}
 	\label{fig:relativeSize}
+\end{figure}
+
+\subsubsection{Texture gradient}
+Surfaces with certain textures and patterns are also used to determine depth. \autoref{fig:textureGradient} shows how the retinal information from the black squares change as they become more distant to the viewer.
+\citep[p.~201]{sensationPerception}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\linewidth]{figure/Analysis/textureGradient.png}
+	\caption{Illustration of how the we can perceive depth through a repeated pattern on the floor. The black squares decrease in size as the depth increases.}
+	\label{fig:textureGradient}
 \end{figure}
 
 \subsubsection{Linear perspective}
 The image in \autoref{fig:linearPerspective} shows what could appear to be a room with a lot of lines. Assuming that the lines, both on the floor and the ceiling, are parallel, the fact that they seem to converge and get closer together as they move closer to the vanishing point gives the appearance of depth in the \textit{"room"}\citep[p.~201]{sensationPerception}.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{figure/Analysis/linearPerspective.png}
+	\includegraphics[width=0.75\linewidth]{figure/Analysis/linearPerspective.png}
 	\caption{When parallel lines converge, as they recede in the distance, is called linear perspective.}
 	\label{fig:linearPerspective}
 \end{figure}
@@ -49,7 +69,7 @@ The image in \autoref{fig:linearPerspective} shows what could appear to be a roo
 \autoref{fig:atmosphericPerspective} shows how an objects light information can be distorted by a variety of particles in the air. The objects that are farther away appear more and more hazy and less distinct as the light must travel through longer distances of air. This is called \textit{atmospheric perspective}\citep[p.~202]{sensationPerception}.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{figure/Analysis/atmosphericPerspective2.png}
+	\includegraphics[width=0.75\linewidth]{figure/Analysis/atmosphericPerspective2.png}
 	\caption{Atmospheric perspective is a light-based monocular cue. Particles in the air can obscure and distort the retinal information for objects in the distance whereas the objects closest to the viewer appear more clearly.}
 	\label{fig:atmosphericPerspective}
 \end{figure}
@@ -58,7 +78,7 @@ The image in \autoref{fig:linearPerspective} shows what could appear to be a roo
 We assume that there is a light source from above in the two images in \autoref{fig:shading}. Based on the \textit{shading} of the objects it appears that the center object of the left image is an indention, while the surrounding objects appear to be raised. The opposite goes for the image on the right\citep[p.~202]{sensationPerception}.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{figure/Analysis/shading.png}
+	\includegraphics[width=0.75\linewidth]{figure/Analysis/shading.png}
 	\caption{Figure showing how depth can be perceived based on illumination and shading of a curved object.}
 	\label{fig:shading}
 \end{figure}
@@ -67,7 +87,7 @@ We assume that there is a light source from above in the two images in \autoref{
 Cast shadows is another light based cue that provides us with valuable information about an objects location in 3D space. In \autoref{fig:castShadow} it can be seen that relative height alone is not a reliable cue(See \autoref{sec:relativeHeight}). The image shows three objects that appear to be the same size on the image. However, the cast shadows from the objects indicate that they are not the same size and they are not equally far away from the viewer\citep[p.~203]{sensationPerception}.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{figure/Frontpage/frontpage2.png}
+	\includegraphics[width=0.75\linewidth]{figure/Frontpage/frontpage2.png}
 	\caption{Figure showing how cast shadows from objects provide information as to where objects are located in 3D space.}
 	\label{fig:castShadow}
 \end{figure}
@@ -81,28 +101,37 @@ Cast shadows is another light based cue that provides us with valuable informati
 	\label{fig:parallax}
 \end{figure}
 
+\subsubsection{Optic flow}
+This cue is related to motion parallax(See \autoref{sec:parallax}), which depends on movement. However, motion parallax is how we perceive objects moving as we move in a sideways direction, whereas optic flow is what we perceive in forward and backward motion. \autoref{fig:opticFlow} shows how surrounding object move away from the focus of expansion, which is the point we move towards, as we approach it.\citep[p.~205]{sensationPerception}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\linewidth]{figure/Analysis/opticFlow.png}
+	\caption{This figure illustrates how forward movement make surroundings move and thereby enabling us to perceive depth by Optic flow.}
+	\label{fig:opticFlow}
+\end{figure}
+
 \subsubsection{Deletion and accretion}
 Another one of the dynamic monocular depth cues, which is also related to occlusion(See \autoref{fig:partialOcclusion}), is called \textit{deletion and accretion}. If we imagine that the round object in \autoref{fig:deletionAccretion} is the same object at different times moving from the left to the right, deletion occurs when the object is moving behind another object(the box) making it partially occluded, and accretion happens when the object reappears on the right side of the box and is gradually de-occluded\citep[p.~207]{sensationPerception}.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{figure/Analysis/deletionAccretion.png}
+	\includegraphics[width=0.75\linewidth]{figure/Analysis/deletionAccretion.png}
 	\caption{Illustrating an object in different times moving and disappearing behind another object and reappearing on the other side.}
 	\label{fig:deletionAccretion}
 \end{figure}
 
 
 \subsection{Binocular depth cues}\label{sec:binocularDepthCues}
-A depth cue that requires the use of both eyes is called Binocular depth cues. As seen in \autoref{fig:depthCues} this category only contains one cue, which is \textit{Binocular disparity}. Due to our eyes being positioned horizontally different the 2D retinal images from both eyes will be slightly different as seen in \autoref{fig:stereoscopicVision}. Binocular disparity is the difference in position of the object being looked at with each eye\citep[p.~208]{sensationPerception}. The differences in the two 2D images from both eyes are processed in our brain to makes us perceive the surrounding 3D space. This is a powerful depth cue for species with front facing eyes\citep{seeingInThreeDimensions}. Binocular disparity is also used in Head-mounted displays(HMD)\citep{hmdCues}.
+A depth cue that requires the use of both eyes is called a Binocular depth cue. As seen in \autoref{fig:depthCues} this category only contains one cue, which is \textit{Binocular disparity}. Due to our eyes being positioned horizontally different the 2D retinal images from both eyes will be slightly different as seen in \autoref{fig:stereoscopicVision}. Binocular disparity is the difference in position of the object being looked at with each eye\citep[p.~208]{sensationPerception}. The differences in the two 2D images from both eyes are processed in our brain to makes us perceive the surrounding 3D space. This is a powerful depth cue for species with front facing eyes\citep{seeingInThreeDimensions}.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{figure/Analysis/stereoScopicVision.png}
+	\includegraphics[width=0.75\linewidth]{figure/Analysis/stereoScopicVision.png}
 	\caption{Figure illustrating a difference in each eyes' retinal image when looking at an object. The left image corresponds to the left eyes view and the right image corresponds to the right eyes view.}
 	\label{fig:stereoscopicVision}
 \end{figure}
 
 
 \subsection{Stereopsis and binocular disparity in stereograms}\label{sec:stereograms}
-The term \textit{stereopsis} (or stereoscopic depth perception) refers to the depth perception perceived through \textit{binocular disparity}\citep{sensationPerception,seeingInThreeDimensions}. It has been showed that binocular disparity alone can make us perceive depth\citep{autostereograms}. Stereograms were invented by Charles Wheatstone as a part of his research in stereopsis. 
+The term \textit{stereopsis} (or stereoscopic depth perception) refers to the depth perception perceived through \textit{binocular disparity}\citep{sensationPerception,seeingInThreeDimensions}. It has been shown that binocular disparity alone can make us perceive depth\citep{autostereograms}. Stereograms were invented by Charles Wheatstone as a part of his research in stereopsis. 
 When viewing a set of images (similiarly to the two images shown in \autoref{fig:stereoscopicVision}), a stereoscope can make a scene appear to be in 3D, provided that the two viewing angles are approximately 6cm apart, as if it were viewed by two eyes\citep[p.~212]{sensationPerception}. 
 An autostereogram, however, is a single image stereogram containing a repeated pattern, that, if looked at in a certain way, can make parts of the pattern \textit{pop out} give an illusion of depth and reveal objects or shapes \textit{"hidden"} within the pattern\citep{autostereograms}. The image in \autoref{fig:autostereogramExample} is an example of such an autostereogram.
 
@@ -117,7 +146,7 @@ The repetition of the pattern is constructed in such way that the parts of the p
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.8\linewidth]{figure/Analysis/autoStereogram.png}
+	\includegraphics[width=0.75\linewidth]{figure/Analysis/autoStereogram.png}
 	\caption{Figure showing how dots with different distances between them in a repeating pattern, through the use of both eyes, can make parts appear on different depths, when the focal point is not directly on the image plane.}
 	\label{fig:autostereogram}
 \end{figure}
@@ -126,22 +155,22 @@ The repetition of the pattern is constructed in such way that the parts of the p
 This section discusses the topics from the previous section. It also explores various ways of how depth perception is integrated in modern digital media technology.
 
 	\subsection{Visual impairments}
-	In all of the examples throughout this paper, it is assumed that the viewer has the sight of a normal person, meaning that visual impairments have not been considered for that matter. An example where this might be a relevant issue is binocular disparity, which is described in \autoref{sec:binocularDepthCues}. If a viewer does not have two functioning eyes, which is required to perceive depth through stereoscopic vision, he/she must rely on other depth cues.
+	In all of the examples throughout this paper, it is assumed that the viewer has the sight of a normal person, meaning that visual impairments have not been considered. An example where this might be a relevant issue is binocular disparity, which is described in \autoref{sec:binocularDepthCues}. If a viewer does not have two functioning eyes, which is required to perceive depth through stereoscopic vision, he/she must rely on other depth cues.
 
 	\subsection{Parallax scrolling}
 	A lot of the screen-based electronic devices available today use depth cues in order to give the appearance of depth on the screen, which is essentially a 2D image. An example of this is motion parallax, which is described in \autoref{sec:parallax}. This is popular web design technique that makes objects on the screen move at different speeds as a user scrolls through a website, giving a 3D effect\citep{parallaxWeb}. Apple also introduced a parallax effect to the homescreen of iPhones and iPads with the release of iOS 7, which made icons appear to levitate above the background image as the device was moved\citep{ios7}.
 
 	\subsection{Virtual reality}
-	Virtual reality is another application that makes use of depth cues. As previously mentioned in \autoref{sec:binocularDepthCues} HMDs use binocular disparity to place a user within an immersive virtual 3D environment that can be explored and interacted with\citep{hmdCues}. However, other cues are also applied in virtual environments such as Shadows and perspective. Virtual reality has become increasingly popular for different types of applications like games, simulations, training and research. However, if the conditions are not optimal, using a HMD can cause discomfort, strain the eyes and induce motion sickness possibly due to sensory conflicts\citep{hmdCues,motionSickness}.
+	Virtual reality is another application that makes use of depth cues. Head mounted displays(HMD) use binocular disparity(See \autoref{sec:binocularDepthCues}) to place a user within an immersive virtual 3D environment that can be explored and interacted with\citep{hmdCues}. However, other cues are also applied in virtual environments such as Shadows and perspective. Virtual reality has become increasingly popular for different types of applications like games, simulations, training and research. However, if the conditions are not optimal, using a HMD can cause discomfort, strain the eyes and induce motion sickness possibly due to sensory conflicts\citep{hmdCues,motionSickness}.
 
 	\subsection{Autostereograms as an artform}
 	Autostereograms became a popular form of art with the release of the book series \textit{"Magic eye"}\citep{autostereograms}, and they have since then also been used in video form as well. An example of this is a music video for the song \href{https://www.youtube.com/watch?v=2AKtp3XHn38}{\color{blue}\textit{"Black is good"} by Young Rival}.
 
 	\subsection{Microsoft Kinect}
-	Modern technology is also allowing cameras and sensors to measure depth and reconstruct 3D scenes. Some of these use a process called Time-of-flight. This is a process where optical devices emit light rays into a 3D space and measure the time it takes the light rays to be reflected back to the sensor(longer time = longer distance and vice versa), and thereby are able to generate depth maps of the scene. An example of these devices is the Microsoft Kinect 2\citep{tof}. The first Microsoft Kinect used a different approach for depth measurement which is triangulation. The device emits a speckle pattern of infrared dots onto the scene and by comparing the this pattern to a baseline pattern stored in memory, it is able to detect changes in the environment and generate a depth map\citep{pointCloud}.
+	Modern technology is also using cameras and sensors to measure depth and reconstruct 3D scenes. Some of these use a process called Time-of-flight. This is a process where optical devices emit light rays into a 3D space and measure the time it takes the light rays to be reflected back to the sensor(longer time = longer distance and vice versa), and thereby are able to generate depth maps of the scene. An example of these devices is the Microsoft Kinect 2\citep{tof}. The first Microsoft Kinect used a different approach for depth measurement which is triangulation. The device emits a speckle pattern of infrared dots onto the scene and by comparing this pattern to a baseline pattern stored in memory, it is able to detect changes in the environment and generate a depth map\citep{pointCloud}.
 	
 	\subsection{Self-driving cars}
-	Some autonomous vehicles use a combination of data from different types of sensors to perceive the surrounding 3D environment and detect static and dynamic objects. These sensors are \textit{radar}, \textit{LiDAR} and \textit{cameras}. Radars are good at detecting objects and speeds, although do not have good shape detection in obstacles. LiDAR sensors compensate by using light and emitting a 3D point cloud that provides useful object and shape recognition, but falls short in sensor range and bad weather conditions. The cameras are used to read signs, traffic lights, road markings etc., but these readings are not always correct. There are several sensors installed on cars like these providing useful data to the perception system covering the whole 360 degrees around the vehicle\citep{selfdrivingCars}.
+	Some autonomous vehicles use a combination of data from different types of sensors to perceive the surrounding 3D environment and detect static and dynamic objects. These sensors are radar, LiDAR and cameras. Radars are good at detecting objects and speeds, although they do not have good shape detection in obstacles. LiDAR sensors compensate by using light and emitting a 3D point cloud that provides useful object and shape recognition, but falls short in sensor range and bad weather conditions. The cameras are used to read signs, traffic lights, road markings etc., but these readings are not always correct. There are several sensors installed on cars like these providing useful data to the perception system covering the whole 360 degrees around the vehicle\citep{selfdrivingCars}.
 	
 
 \section{Summary and Conclusion}
