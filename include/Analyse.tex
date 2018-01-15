@@ -32,7 +32,7 @@ Assuming that the two objects seen in \autoref{fig:relativeSize} have about the 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{figure/Analysis/relativeSize.png}
-	\caption{Relative size.}
+	\caption{Illustration of relative size. The assumption is that both objects are equal in size, but the closer an object is to the viewer, the larger it appears in the image.}
 	\label{fig:relativeSize}
 \end{figure}
 
@@ -55,7 +55,7 @@ The image in \autoref{fig:linearPerspective} shows what could appear to be a roo
 \end{figure}
 
 \subsubsection{Shading}
-Assume that there is a light source from above in the two images in \autoref{fig:shading}. Based on the \textit{shading} of the objects it appears that the center object of the left image is an indention, while the surrounding objects appear to be raised. The opposite goes for the image on the right\citep[p.~202]{sensationPerception}.
+If we assume that there is a light source from above in the two images in \autoref{fig:shading}. Based on the \textit{shading} of the objects it appears that the center object of the left image is an indention, while the surrounding objects appear to be raised. The opposite goes for the image on the right\citep[p.~202]{sensationPerception}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{figure/Analysis/shading.png}
@@ -68,7 +68,7 @@ Assume that there is a light source from above in the two images in \autoref{fig
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=1\linewidth]{figure/Analysis/parallax.png}
-	\caption{Motion parallax}
+	\caption{Illustrating an identical movement of the three object at three different times. Objects close to the viewer appear to move at a faster pase and a longer distance.}
 	\label{fig:parallax}
 \end{figure}
 
@@ -77,7 +77,7 @@ Another one of the dynamic monocular depth cues, which is also related to occlus
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.8\linewidth]{figure/Analysis/deletionAccretion.png}
-	\caption{Deletion and accretion.}
+	\caption{Illustrating an object in different times moving and disappearing behind another objet and reappearing on the other side.}
 	\label{fig:deletionAccretion}
 \end{figure}
 
@@ -93,8 +93,7 @@ A depth cue that requires the use of both eyes is called Binocular depth cues. A
 
 
 \subsection{Stereopsis and binocular disparity in stereograms}\label{sec:stereograms}
-%Under what conditions do the various cues operate? In particular, explain what is meant by "stereopsis" and "binocular disparity" and how these are used in the construction of stereograms and autostereograms.
-The term \textit{stereopsis} (or stereoscopic depth perception) refers to the depth perception perceived through \textit{binocular disparity}\citep{sensationPerception,seeingInThreeDimensions}. It has been showed that binocular disparity alone can give make us perceive depth\citep{autostereograms}. Stereograms were invented by Charles Wheatstone as a part of his research in stereopsis. It is, when a set of images, similiarly to the two images shown in \autoref{fig:stereoscopicVision}, can, if viewed through a stereoscope, make a scene appear to be in 3D, provided that the two viewing angles were approximately 6cm apart, as if it were viewed by two eyes\citep[p.~212]{sensationPerception}. An autostereogram, however, is a single image stereogram containing a repeated pattern, that, if looked at in a certain way, can make parts of the pattern \textit{pop out} give an illusion of depth and reveal objects or shapes \textit{"hidden"} within the pattern.\citep{autostereograms}. The image in \autoref{fig:autostereogramExample} is an example of such an autostereogram.
+The term \textit{stereopsis} (or stereoscopic depth perception) refers to the depth perception perceived through \textit{binocular disparity}\citep{sensationPerception,seeingInThreeDimensions}. It has been showed that binocular disparity alone can give make us perceive depth\citep{autostereograms}. Stereograms were invented by Charles Wheatstone as a part of his research in stereopsis. It is, when a set of images, similiarly to the two images shown in \autoref{fig:stereoscopicVision}, can, if viewed through a stereoscope, make a scene appear to be in 3D, provided that the two viewing angles were approximately 6cm apart, as if it were viewed by two eyes\citep[p.~212]{sensationPerception}. An autostereogram, however, is a single image stereogram containing a repeated pattern, that, if looked at in a certain way, can make parts of the pattern \textit{pop out} give an illusion of depth and reveal objects or shapes \textit{"hidden"} within the pattern\citep{autostereograms}. The image in \autoref{fig:autostereogramExample} is an example of such an autostereogram.
 
 \begin{figure}[H]
 	\centering
@@ -131,7 +130,7 @@ This section discusses the topics from the previous section. It also explores va
 	Modern technology is also allowing cameras and sensors to measure depth and reconstruct 3D scenes. Some of these use a process called Time-of-flight. This is a process where optical devices emit light rays into a 3D space and measure the time it takes the light rays to be reflected back to the sensor(longer time = longer distance and vice versa), and thereby are able to generate depth maps of the scene. An example of these devices is the Microsoft Kinect 2\citep{tof}. The first Microsoft Kinect used a different approach for depth measurement which is triangulation. The device emits a speckle pattern of infrared dots onto the scene and by comparing the this pattern to a baseline pattern stored in memory it is able to detect changes in the environment and generate a depth map\citep{pointCloud}.
 	
 	\subsection{Self-driving cars}
-	Some autonomous vehicles use a combination of data from different types of sensors to perceive the surrounding 3D environment and detect static and dynamic objects. These sensors are radar, LiDAR and cameras. Radars are good at detecting objects and speeds, although do not have good shape detection in obstacles. LiDAR sensors compensate by using light and emitting a 3D point cloud that provides useful object and shape recognition, but falls short in sensor range and bad weather conditions. The cameras are used to read signs, traffic lights, road markings etc., but these readings are not always correct. There are several sensors installed on cars like these providing useful data to the perception system covering the whole 360 degrees around the vehicle.\citep{selfdrivingCars}
+	Some autonomous vehicles use a combination of data from different types of sensors to perceive the surrounding 3D environment and detect static and dynamic objects. These sensors are radar, LiDAR and cameras. Radars are good at detecting objects and speeds, although do not have good shape detection in obstacles. LiDAR sensors compensate by using light and emitting a 3D point cloud that provides useful object and shape recognition, but falls short in sensor range and bad weather conditions. The cameras are used to read signs, traffic lights, road markings etc., but these readings are not always correct. There are several sensors installed on cars like these providing useful data to the perception system covering the whole 360 degrees around the vehicle\citep{selfdrivingCars}.
 	
 
 \section{Summary and Conclusion}
